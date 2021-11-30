@@ -1,4 +1,7 @@
 # ITU-AI-ML-PS-009-RF-Sensor-based-HAR
+
+This repository contains the code and description of our solution as well as the report and the final presentation slides for ITU AI/ML Challenge PS-009 problem statement.
+
 test_individualSensor.py:
 
 Assumptions:
