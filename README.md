@@ -2,7 +2,7 @@
 
 This repository contains the code and description of our solution as well as the report and the final presentation slides for ITU AI/ML Challenge PS-009 problem statement.
 
-# Train the model
+## Train the model
 train_individualSensor.py
 
 Assumptions:
@@ -20,7 +20,7 @@ Training:
 Output:
 The model weights are stored in the filename provided by checkpoint_path variable
 
-# Test the model
+## Test the model
 test_individualSensor.py:
 
 Assumptions:
