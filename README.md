@@ -2,6 +2,25 @@
 
 This repository contains the code and description of our solution as well as the report and the final presentation slides for ITU AI/ML Challenge PS-009 problem statement.
 
+# Train the model
+train_individualSensor.py
+
+Assumptions:
+1) We have 3 different folders corresponding to each sensor in the following format:
+	1. Folder 1: Containing 2 subfolders with all the images of classes 2 and 3.
+	2. Folder 2: Containing 3 subfolders with all the images of classes 8,9 and 10.
+	3. Folder 3: Containing 8 subfolders in which one subfolder contains all images of both classes 2 and 3 and one subfolder contains all images of classes 8,9 and 10.
+
+Training:
+1)Provide the appropiate path to the folder on line number 31.
+2)Provide the appropriate information to the variable classes on line number 32.(needs to be chosen among 2/3/8).
+3)Based on the value of classes variable, the number of filter size is determined.
+4)Provide appropriate name to the checkpoint_path variable on line number 99.
+
+Output:
+The model weights are stored in the filename provided by checkpoint_path variable
+
+# Test the model
 test_individualSensor.py:
 
 Assumptions:
@@ -36,20 +55,5 @@ Prediction	Activity
 I_Q_to_image.py:
 The above file contains codes for converting I/Q samples to spectogram images. The above code has been taken from https://github.com/ci4r/CI4R-Activity-Recognition-datasets. 
 
-train_individualSensor.py
-
-Assumptions:
-1) We have 3 different folders corresponding to each sensor in the following format:
-	1. Folder 1: Containing 2 subfolders with all the images of classes 2 and 3.
-	2. Folder 2: Containing 3 subfolders with all the images of classes 8,9 and 10.
-	3. Folder 3: Containing 8 subfolders in which one subfolder contains all images of both classes 2 and 3 and one subfolder contains all images of classes 8,9 and 10.
-
-Training:
-1)Provide the appropiate path to the folder on line number 31.
-2)Provide the appropriate information to the variable classes on line number 32.(needs to be chosen among 2/3/8).
-3)Based on the value of classes variable, the number of filter size is determined.
-4)Provide appropriate name to the checkpoint_path variable on line number 99.
-
-Output:
-The model weights are stored in the filename provided by checkpoint_path variable.
+.
 
